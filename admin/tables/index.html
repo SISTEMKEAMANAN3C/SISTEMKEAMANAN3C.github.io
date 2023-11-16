@@ -13,7 +13,7 @@
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body onload="checkCookie()">
 <div id="app">
 
   <!-- Start Navbar -->
@@ -41,7 +41,7 @@
             <div class="is-user-name"><span>Admin</span></div>
           </a>
         </div>
-        <a title="Log out" class="navbar-item is-desktop-icon-only">
+        <a title="Log out" class="navbar-item is-desktop-icon-only" onclick="Logout()">
           <span class="icon"><i class="mdi mdi-logout"></i></span>
           <span>Log out</span>
         </a>
@@ -419,6 +419,7 @@
 
 <!-- Scripts below are for demo only -->
 <script type="text/javascript" src="../../src/js/main.min.js"></script>
+<script type="module" src="../../src/js/mainLogout.js"></script>
 
 <!-- Icons below are for demo only. Feel free to use any icon pack. Docs: https://bulma.io/documentation/elements/icon/ -->
 <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css">
